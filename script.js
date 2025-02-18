@@ -33,8 +33,8 @@ function game(event){
                 {   
                     result.style.borderColor = "black"
                     result.innerHTML = `!! Winner is Player ${turn} !!`
-                    blueImage.src = "blueWins.png";
-                    redImage.src = "redLose.png";
+                    blueImage.src = "Images/blueWins.png";
+                    redImage.src = "Images/redLose.png";
                     blueImage.style.animationPlayState = "running";
                      gameBoard.removeEventListener('click', game);
                      return;
@@ -53,8 +53,8 @@ function game(event){
                 {    
                     result.style.borderColor = "black"
                     result.innerHTML = `!! Winner is Player ${turn} !!`
-                    redImage.src = "redWins.png";
-                    blueImage.src = "blueLose.png"
+                    redImage.src = "Images/redWins.png";
+                    blueImage.src = "Images/blueLose.png"
                     redImage.style.animationPlayState = "running";
                     gameBoard.removeEventListener('click', game);
                     return;
@@ -68,8 +68,8 @@ function game(event){
     console.log(totalTurns);
     if (totalTurns >= 9){
         result.innerHTML = "!! Match is Draw !!"
-        redImage.src = "redLose.png";
-        blueImage.src = "blueLose.png"
+        redImage.src = "Images/redLose.png";
+        blueImage.src = "Images/blueLose.png"
         result.style.borderColor = "black"
         totalTurns = 0;
         boardArray.fill("E");
@@ -79,9 +79,9 @@ function game(event){
 
 gameBoard.addEventListener('click', game)
 restart.addEventListener('click', () => {
-    blueImage.src = "bluePlayer.png";
+    blueImage.src = "Images/bluePlayer.png";
     blueImage.style.animationPlayState = "paused";
-    redImage.src = "redPlayer.png";
+    redImage.src = "Images/redPlayer.png";
     redImage.style.animationPlayState = "paused";
     result.innerHTML = ""
     result.style.borderColor = "#b086eb"
