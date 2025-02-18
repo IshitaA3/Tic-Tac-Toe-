@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #b086eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container{
+    text-align: center;
+    padding: 30px;
+    /* background-color: white; */
+    height: 500px;
+    width: 292px;
+    margin: auto;
+}
+
+#gameBoard{
+    background-color: black;
+    /* margin: auto;
+    text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#gameBoard input{
+    background-color: #b086eb;
+    cursor:pointer;
+    border: none;
+    height: 90px;
+    width: 90px;
+    font-size: 70px;
+    text-align: center;
+    caret-color: transparent;
+
+}
+
+#gameBoard input:focus{
+    outline: none;
+}
+
+#result {
+    padding: 5px;
+    width: 250px;
+    margin: auto;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    font-size: 22px;
+    font-family:cursive;
+    border: 3px solid #b086eb;
+    
+}
+
+#restart {
+    cursor: pointer;
+    background-color: #493368;
+    border: none;
+    color: white;
+    height: 35px;
+    font-size: 17px;
+    font-family: cursive;
+    border-radius: 4px;
+
+}
+
+.sides{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: space-around; */
+}
+
+#firstPart{
+    margin-bottom: 2em;
+}
+
+.players{
+    font-size: 20px;
+    background-color: #493368;
+    color: white;
+    font-family: cursive;
+}
+
+.playerImage{
+    height: 480px;
+    width: auto;
+}
+
+#thirdPart{
+    gap: 4em;
+    /* width: 200px; */
+    margin-bottom: 2em;
+}
+
+#redImage{
+    margin-bottom: 2em;
+    width: auto;
+    height: 380px;
+    animation: grow 1.2s ease-in-out infinite;
+    animation-play-state: paused;
+}
+
+#blueImage{
+    animation: grow 1.2s ease-in-out infinite;
+    animation-play-state: paused;
+    
+}
+
+@keyframes grow {
+
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.15;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #winningLine{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 5px;
+    width: 0;
+    background-color: red;
+    transform: rotate(45deg);
+} */
+
+/* #winningLine:hover{
+    rotate: 90deg;
+} */
+
+
